@@ -2,6 +2,9 @@
 <package >
 	<metadata>
 		<id>$id$</id>
+    <dependencies>
+      <dependency id="xunit" version="[1.9.2,2)" />
+    </dependencies>
 		<version>$version$</version>
 		<title>$title$</title>
 		<authors>$author$</authors>

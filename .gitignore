@@ -181,3 +181,8 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+
+xUnitEx/.vs/
+xUnitEx/iQuarc.xUnitEx/.vs/
+xUnitEx/MigrationBackup/
+xUnitEx/iQuarc.xUnitEx.UnitTests/.vs/
