@@ -23,9 +23,9 @@ namespace iQuarc.xUnitEx.UnitTests
             {
                 act.ShouldThrow();
             }
-            catch (AssertException ae)
+            catch (XunitException ae)
             {
-                Assert.True(ae.UserMessage.Contains("No exception was thrown"),
+                Assert.True(ae.Message.Contains("No exception was thrown"),
                             "Assertion failed, but not from expected reason");
                 return;
             }
@@ -51,9 +51,9 @@ namespace iQuarc.xUnitEx.UnitTests
             {
                 act.ShouldThrow<ApplicationException>();
             }
-            catch (AssertException ae)
+            catch (XunitException ae)
             {
-                Assert.True(ae.UserMessage.Contains(" " + typeof (Exception).Name),
+                Assert.True(ae.Message.Contains(" " + typeof (Exception).Name),
                             "Assertion failed, but not from expected reason");
                 return;
             }
@@ -78,9 +78,9 @@ namespace iQuarc.xUnitEx.UnitTests
             {
                 act.ShouldThrow<ApplicationException>();
             }
-            catch (AssertException ae)
+            catch (XunitException ae)
             {
-                Assert.True(ae.UserMessage.Contains("No exception was thrown"),
+                Assert.True(ae.Message.Contains("No exception was thrown"),
                             "Assertion failed, but not from expected reason");
                 return;
             }
@@ -105,9 +105,9 @@ namespace iQuarc.xUnitEx.UnitTests
             {
                 act.ShouldNotThrow();
             }
-            catch (AssertException ae)
+            catch (XunitException ae)
             {
-                Assert.True(ae.UserMessage.Contains("thrown when it shouldn't have been"),
+                Assert.True(ae.Message.Contains("thrown when it shouldn't have been"),
                     "Assertion failed, but not from expected reason");
                 return;
             }
@@ -124,9 +124,9 @@ namespace iQuarc.xUnitEx.UnitTests
             {
                 act.ShouldNotThrow<ArgumentException>();
             }
-            catch (AssertException ae)
+            catch (XunitException ae)
             {
-                Assert.True(ae.UserMessage.Contains("ArgumentException"),
+                Assert.True(ae.Message.Contains("ArgumentException"),
                     "Assertion failed, but not from expected reason");
                 return;
             }
