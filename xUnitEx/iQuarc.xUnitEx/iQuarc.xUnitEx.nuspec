@@ -2,6 +2,9 @@
 <package >
 	<metadata>
 		<id>$id$</id>
+    <dependencies>
+      <dependency id="xunit" version="[1.9.2,2)" />
+    </dependencies>
 		<version>$version$</version>
 		<title>$title$</title>
 		<authors>$author$</authors>
@@ -12,7 +15,11 @@
 		<releaseNotes>Initial set of extensions for xUnit</releaseNotes>
 		<copyright>Copyright 2014</copyright>
 		<tags>xUnit UnitTesting Extensions TDD</tags>
-		<licenseUrl>https://raw.githubusercontent.com/iQuarc/xUnitEx/master/MIT.md</licenseUrl>
+		<license type="expression">MIT</license>
 		<projectUrl>https://github.com/iQuarc/xUnitEx</projectUrl>
+		<readme>docs\README.md</readme>
 	</metadata>
+	<files>
+		<file src="..\..\README.md" target="docs\README.md" />
+	</files>
 </package>
