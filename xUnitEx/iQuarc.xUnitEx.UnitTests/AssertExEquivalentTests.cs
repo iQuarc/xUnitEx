@@ -34,7 +34,7 @@ namespace iQuarc.xUnitEx.UnitTests
 
             Action act = () => AssertEx.AreEquivalent(e, "a", "a");
 
-            act.ShouldThrow<AssertException>();
+            act.ShouldThrow<XunitException>();
         }
 
         [Fact]
@@ -44,7 +44,7 @@ namespace iQuarc.xUnitEx.UnitTests
 
             Action act = () => AssertEx.AreEquivalent(e, "a", "a");
 
-            act.ShouldThrow<AssertException>();
+            act.ShouldThrow<XunitException>();
         }
 
         [Fact]
@@ -54,7 +54,7 @@ namespace iQuarc.xUnitEx.UnitTests
 
             Action act = () => AssertEx.AreEquivalent(e, "a", "b");
 
-            act.ShouldThrow<AssertException>();
+            act.ShouldThrow<XunitException>();
         }
 
         [Fact]
@@ -64,7 +64,7 @@ namespace iQuarc.xUnitEx.UnitTests
 
             Action act = () => AssertEx.AreEquivalent(e, "a", "b", "d");
 
-            act.ShouldThrow<AssertException>();
+            act.ShouldThrow<XunitException>();
         }
 
         [Fact]
@@ -84,7 +84,7 @@ namespace iQuarc.xUnitEx.UnitTests
 
             Action act = () => AssertEx.AreEquivalent(e, "a", "b", null);
 
-            act.ShouldThrow<AssertException>();
+            act.ShouldThrow<XunitException>();
         }
 
         [Fact]
